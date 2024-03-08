@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> <!-- Assuming your CSS file is named "styles.css" -->
     <title>Your Sidebar</title>
 </head>
 <body>
@@ -12,7 +11,7 @@
 <div class="sidebar close">
     <ul class="nav-links">
         <sec:authorize access="hasRole('ROLE_ADMIN')">
-            <!-- Admin Sidebar -->
+
             <li>
                 <div class="icon-link">
                     <a href="allInstructors">
@@ -97,7 +96,7 @@
             </li>
         </sec:authorize>
         <sec:authorize access="hasRole('ROLE_STUDENT')">
-            <!-- Student Sidebar -->
+
             <li>
                 <div class="icon-link">
                     <a href="studentInstructors">
@@ -115,7 +114,7 @@
                 </div>
             </li>
         </sec:authorize>
-        <!-- Logout Link -->
+
         <li>
             <div class="icon-link">
                 <a href="/logout">
